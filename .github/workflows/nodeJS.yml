@@ -3,7 +3,7 @@ name: Build and Release Electron App
 on:
   push:
     branches:
-      - main  # `main` ブランチに push したときに実行
+      - main
   pull_request:
     branches:
       - main
@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: リポジトリをチェックアウト
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Node.js をセットアップ
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: 'npm'
@@ -29,7 +29,7 @@ jobs:
         run: npm run build
 
       - name: ビルドアーティファクトをアップロード
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: electron-app
           path: dist/
