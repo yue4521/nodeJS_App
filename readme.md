@@ -1,27 +1,30 @@
-# 🖥️ Electron Chat App 🚀  
+# 🚀 Electron Chat App
 
-## 📖 概要  
-**Electron Chat App** は、Electron と WebSocket (Socket.IO) を用いたリアルタイムチャットアプリです。  
-シンプルなUIでメッセージの送受信を行うことができます。  
+リアルタイムでメッセージをやり取りできる **Electron × WebSocket** のチャットアプリ。
 
-## 🎯 特徴  
-- **Electron** を使用したデスクトップアプリ  
-- **WebSocket (Socket.IO)** によるリアルタイム通信  
-- **マルチプロセスアーキテクチャ**（バックエンドを別プロセスで管理）  
-- **シンプルなUI**（HTML, CSS, JavaScript）  
-- **ユーザー間のメッセージ送受信**  
-
----
-
-## 🛠️ インストール & 実行方法  
-
-### **🔹 1. 必要なツール**  
-- **Node.js** (v16 以上推奨)  
-- **npm** (Node.js に含まれています)  
-
-### **🔹 2. クローン & セットアップ**  
+## 🛠 インストール & 実行
 ```bash
-git clone https://github.com/your-username/electron-chat-app.git
-cd electron-chat-app
+git clone https://github.com/your-username/nodeJS_App.git
+cd nodeJS_App
 npm install
+node server.js  # サーバー起動
+npm start       # アプリ起動
+```
+
+## 📂 ファイル構成
+
+```
+electron-chat-app/
+├── server.js        # WebSocketサーバー
+├── main.js          # Electron メインプロセス
+├── index.html       # フロントエンド（UI）
+├── index.js         # レンダラープロセス
+├── style.css        # カスタムスタイル
+├── package.json     # プロジェクト情報
+└── .gitignore       # Git管理除外リスト
+```
+
+## 🔧 ビルド
+```
+npm run build
 ```
