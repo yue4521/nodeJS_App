@@ -1,5 +1,5 @@
 {
-  "name": "electron-chat-app",
+  "name": "nodejs_app",
   "version": "1.0.0",
   "description": "A simple Electron chat app using WebSocket",
   "main": "main.js",
