@@ -24,6 +24,7 @@ input.addEventListener("keypress", (event) => {
 function sendMessage() {
     const message = input.value.trim(); // 空白を削除したメッセージを取得
     if (message) { // メッセージが空でない場合に送信
+        console.log(`📤sending: ${message}`); // 送信メッセージをコンソールに表示
         socket.emit("chat message", message); // サーバーにメッセージを送信
         input.value = ""; // 入力欄をクリア
     }
@@ -31,6 +32,7 @@ function sendMessage() {
 
 // メッセージを受信して画面に表示
 socket.on("chat message", (msg) => {
+    console.log(`📩receiving: ${msg}`); // 受信メッセージをコンソールに表示
     const msgElement = document.createElement("p"); // 新しい<p>要素を作成
     msgElement.textContent = msg; // 受信したメッセージを設定
     messagesDiv.appendChild(msgElement); // メッセージリストに追加
