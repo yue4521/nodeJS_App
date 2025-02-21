@@ -11,7 +11,7 @@ const io = new Server(server, {
 
 // クライアントが接続したときの処理
 io.on("connection", (socket) => {
-    console.log("ユーザーが接続しました:", socket.id);
+    console.log("🛎️ ユーザーが接続しました:", socket.id);
 
     // クライアントからのメッセージを受信
     socket.on("chat message", (msg) => {
