@@ -18,7 +18,7 @@ electron-chat-app/
 ├── server.js        # WebSocketサーバー
 ├── main.js          # Electron メインプロセス
 ├── index.html       # フロントエンド（UI）
-├── index.js         # レンダラープロセス
+├── renderer.js         # レンダラープロセス
 ├── style.css        # カスタムスタイル
 ├── package.json     # プロジェクト情報
 └── .gitignore       # Git管理除外リスト
@@ -34,5 +34,5 @@ npm run build
 |プロセス | 役割 | 担当ファイル |
 | ---- | ---- | ---- |
 | メインプロセス| Electronのアプリ制御（ウィンドウ作成・サーバー起動）| main.js |
-| レンダラープロセス | UI制御（メッセージの送受信・表示）|	index.js |
+| レンダラープロセス | UI制御（メッセージの送受信・表示）|	renderer.js |
 | WebSocketサーバー | クライアント間のメッセージ管理 | server.js |
