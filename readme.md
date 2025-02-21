@@ -28,3 +28,15 @@ electron-chat-app/
 ```
 npm run build
 ```
+
+## プロセスの役割
+
+| TH | TH |
+| TD | TD |
+| TD | TD |
+
+|プロセス | 役割 | 担当ファイル |
+| ---- | ---- | ---- |
+| メインプロセス| Electronのアプリ制御（ウィンドウ作成・サーバー起動）| main.js |
+| レンダラープロセス | UI制御（メッセージの送受信・表示）|	index.js |
+| WebSocketサーバー | クライアント間のメッセージ管理 | server.js |
