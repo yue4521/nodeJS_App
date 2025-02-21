@@ -21,7 +21,8 @@ app.whenReady().then(() => {
     });
 
     // HTML ファイルをウィンドウに読み込む
-    mainWindow.loadFile("index.html");
+    // mainWindow.loadFile("index.html");
+    mainWindow.loadFile("./src/renderer/index.html");
 
     // すべてのウィンドウが閉じられたときの処理
     app.on("window-all-closed", () => {
