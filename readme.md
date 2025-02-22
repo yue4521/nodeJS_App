@@ -11,18 +11,15 @@ node server.js  # サーバー起動
 npm start       # アプリ起動
 ```
 
-##  ファイル構成
-
-```
-electron-chat-app/
-├── server.js        # WebSocketサーバー
-├── main.js          # Electron メインプロセス
-├── index.html       # フロントエンド（UI）
-├── renderer.js         # レンダラープロセス
-├── style.css        # カスタムスタイル
-├── package.json     # プロジェクト情報
-└── .gitignore       # Git管理除外リスト
-```
+## バージョン
+|パッケージ | バージョン |
+| ---- | ---- |
+| node | 20.18.2 |
+| npm | 10.8.2 |
+| electron-builder | 25.1.8 |
+| electron | 34.2.0 |
+| socket.io-client | 4.8.1 |
+| socket.io | 4.8.1 |
 
 ##  ビルド
 ```
